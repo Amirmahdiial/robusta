@@ -1,0 +1,121 @@
+.header-list{
+    position: relative;
+}
+
+.header-list::before{
+    content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background-color: red;
+  transition: 1s; 
+}
+.header-list:hover::before{
+    width: 100%;
+}
+.header-list:hover{
+    color: red;
+}
+.line{
+    top:345px;
+}
+.header-list:hover .drp{
+display: block;
+}
+.drp{
+    position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 30px;
+  width: 100%;
+  display: none;
+}
+.title{
+    margin: 1rem auto;
+    margin-bottom: .5rem;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif ;
+}
+.cotitle{
+    font-size: smaller;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.intro-left{
+    background-image: url(image/bg-section1-1.webp);
+    background-repeat: no-repeat;
+    height: 500px;
+    /* max-width: 500px; */
+    padding-top: 150px;
+    padding-left: 80px;
+}
+.intro-right{
+    background-image: url(image/bg-section1-1.webp);
+    background-repeat: no-repeat;
+    height: 500px;
+    max-width: 500px;
+    padding-top: 150px;
+    padding-left: 80px;
+}
+@media (min-width: 768px) {
+ .intro-right{
+    background-image: url(image/bg-section1-2.webp);
+    background-size: cover;
+    padding-left: 0;
+    padding-right: 10px;
+ }
+ .intro-left{
+    padding-left: 10px;
+ }
+ .caffe{
+    top: 0;
+    left: 0;
+ }
+}  
+@media (min-width: 1024px) {
+    .img-ghah{
+        height: 50vw;
+    }
+}
+.kol{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.kol1{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kol2{
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.x{
+    align-items: center;
+    gap: 9px;
+}
+.jum{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.last{
+    background-image: url(image/header/slide1-1\ \(1\).webp);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
