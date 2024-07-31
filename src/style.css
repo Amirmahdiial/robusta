@@ -1,11 +1,10 @@
 .header-list{
     position: relative;
 }
-
 .header-list::before{
     content: "";
   position: absolute;
-  top: 40%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
@@ -18,9 +17,6 @@
 }
 .header-list:hover{
     color: red;
-}
-.line{
-    top:345px;
 }
 .header-list:hover .drp{
 display: block;
@@ -80,18 +76,35 @@ display: block;
     top: 0;
     left: 0;
  }
+ .smd:hover img{
+    transform: scale(1.1);
+}
 }  
 @media (min-width: 1024px) {
     .img-ghah{
         height: 50vw;
     }
 }
+@media (max-width: 768px) {
+    .fal{
+        display: none;
+    }
+}
+.smd{
+    cursor: pointer;
+    overflow: hidden;
+}
+.smd img{
+    transition:1.1s;
+}
+
+
 .kol{
-    max-width: 1024px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .kol1{
-    max-width: 1024px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
 }
